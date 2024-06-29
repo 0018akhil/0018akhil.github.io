@@ -1,73 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/favicon-B30jqVSV.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akhil Achary</title>
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: xx-large;
-            font-weight: 700;
-        }
-
-        .mainPage {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .intro {
-            text-align: center;
-        }
-
-        .about {
-            display: none;
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-</head>
-
-<body>
-    <div class="mainPage">
-        <div class="about">
-            <ul>
-                <li>Making progress in ML & AI</li>
-                <li>Open Sourcing</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <script>
-        $(document).ready(function () {
-
-            var classIntro = $('<div>').addClass("intro").html("<h1>Hello!</h1><br><h2>I'm Akhil Achary.</h2><br>").hide()
-            $(".mainPage").append(classIntro)
-
-            var progressBar = $('<div>').addClass("progress-bar")
-
-            setTimeout(() => {
-                classIntro.slideDown()
-            }, 700)
-
-            setTimeout(() => {
-                $('.intro').fadeOut(() => {
-                    $(this).remove();
-                    $('.about').fadeIn()
-                })
-            }, 3000)
-        });
-    </script>
-</body>
-
+    <script type="module" crossorigin src="/assets/index-y31Es3cN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CPaCOdLq.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
